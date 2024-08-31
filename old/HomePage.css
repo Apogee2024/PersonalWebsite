@@ -1,0 +1,29 @@
+/* Default styles using CSS variables */
+
+/* h2 element within .home-text */
+.home-text h2 {
+    font-size: 2.5em;
+    color: var(--text-color); /* Use the theme variable for text color */
+}
+
+/* p element within .home-text */
+.home-text p {
+    font-size: 1.2em;
+    color: var(--text-color); /* Use the theme variable for text color */
+}
+
+/* Example for setting background colors */
+.home-page {
+    background-color: var(--background-color); /* Use the theme variable for background color */
+    padding: 20px;
+}
+
+/* Example for setting header background and text colors */
+.home-page-header {
+    background-color: var(--navbar-background-color); /* Use a variable for the header background */
+    color: var(--text-color); /* Use the theme variable for text color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Any other specific styles that should react to the theme change */

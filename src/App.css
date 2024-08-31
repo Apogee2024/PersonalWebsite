@@ -1,0 +1,130 @@
+/* Default light theme */
+[data-theme="light"], :root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background-color: #f8f9fa;
+  --navbar-link-color: #000000;
+  --navbar-brand-color: #000000;
+  --button-bg-color: #f9f9f9;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background-color: #181818;
+  --text-color: #ffffff;
+  --navbar-background-color: #343a40;
+  --navbar-link-color: #ffffff;
+  --navbar-brand-color: #ffffff;
+  --button-bg-color: #1a1a1a;
+}
+
+/* Apply variables globally */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  visibility: hidden;
+  flex: 1;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: var(--navbar-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar-brand {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: var(--navbar-brand-color);
+  padding-left: 1em;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+#About, #Projects, #Experience {
+  color: var(--navbar-link-color);
+  margin-top: 0;
+}
+
+/* Ensure other text elements are using the correct color */
+h1, h2, h3, h4, h5, h6, p, a, li, footer, header {
+  color: var(--text-color);
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--background-color);
+  color: var (--text-color);
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Button styling */
+button {
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+/* Reset margins and padding for a clean layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+/* Transitions for when the user manually switches the theme */
+.theme-transition {
+  transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+
+body.theme-transition,
+#root.theme-transition,
+.navbar.theme-transition,
+#navbar-brand.theme-transition,
+#About.theme-transition,
+#Projects.theme-transition,
+#Experience.theme-transition,
+h1.theme-transition,
+h2.theme-transition,
+h3.theme-transition,
+h4.theme-transition,
+h5.theme-transition,
+h6.theme-transition,
+p.theme-transition,
+a.theme-transition,
+li.theme-transition,
+footer.theme-transition,
+header.theme-transition,
+button.theme-transition {
+  transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+

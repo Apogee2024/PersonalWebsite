@@ -1,0 +1,16 @@
+.About {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+
+  }
+
+.About p {
+    line-height: 2em; /* This sets the line height to 2em, which includes the 1em space between lines */
+    text-indent: 4em; /* add a tab at the beginning of each paragraph */
+}
+
+.About h1 {
+  text-align: center;
+  padding: 0.5em;
+}
