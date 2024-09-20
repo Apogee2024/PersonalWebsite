@@ -1,7 +1,7 @@
 import './App.css';
 import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
-import RegistrationPage from './pages/RegistrationPage';
+import ExperiencePage from './pages/ExperiencePage';
 import Navigation from './components/Navigation';
 import ProjectPage from './pages/ProjectPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -48,7 +48,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage theme={theme} />} />
           <Route path='/about' element={<AboutPage theme={theme} />} />
-          <Route path='/experience' element={<RegistrationPage theme={theme} />} />
+          <Route path='/experience' element={<ExperiencePage theme={theme} />} />
           <Route path='/projects' element={<ProjectPage theme={theme} />} />
         </Routes>
       </Router>

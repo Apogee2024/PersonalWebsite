@@ -1,0 +1,38 @@
+/* Default light theme */
+[data-theme="light"] a.btn.btn-primary {
+    background-color: #a1057f;  /* Bootstrap primary color */
+    color: #ffffff;
+    border: 1px solid #007bff;
+  }
+  
+  [data-theme="light"] a.btn.btn-primary:hover {
+    background-color: #fa04b5;  /* Darker blue on hover */
+    color: #ffffff;
+  }
+  
+  [data-theme="light"] .card-text {
+    color: #000000;  /* Black text for light theme */
+  }
+
+  
+  /* Dark theme */
+  [data-theme="dark"] a.btn.btn-primary {
+    background-color: #6c757d;  /* Gray background for dark theme */
+    color: #ffffff;
+    border: 1px solid #6c757d;
+  }
+  
+  [data-theme="dark"] a.btn.btn-primary:hover {
+    background-color: #5a6268;  /* Darker gray on hover */
+    color: #ffffff;
+  }
+  
+  [data-theme="dark"] .card-text {
+    color: #171717;  /* Light gray text for dark theme */
+  }
+  
+  /* Transition for smooth theme changes */
+  a.btn.btn-primary, .card-text {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
